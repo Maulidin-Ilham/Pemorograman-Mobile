@@ -1,0 +1,8 @@
+![Alt text](images/button.jpeg)
+![Alt text](images/alignment.jpeg)
+![Alt text](images/color.jpeg)
+![Alt text](images/heightweight.jpeg)
+![Alt text](images/margin.jpeg)
+![Alt text](images/padding.jpeg)
+![Alt text](images/transform-g.jpeg)
+![Alt text](images/transform-h.jpeg)
