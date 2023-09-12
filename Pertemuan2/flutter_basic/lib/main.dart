@@ -35,11 +35,17 @@ class MyApp extends StatelessWidget {
                   children: [
                     Text(
                       "On Going",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "Most Popular",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
                     )
                   ],
                 ),
