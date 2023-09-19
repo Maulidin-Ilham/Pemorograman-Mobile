@@ -6,7 +6,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  final List<String> data = ["Kelvin", "Reammur"];
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             width: double.infinity,
             padding: EdgeInsets.all(8.0),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   child: TextFormField(
@@ -33,23 +33,37 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    margin: EdgeInsets.only(top: 30), child: Text("Reamur")),
+                Container(
+                    margin: EdgeInsets.only(top: 30),
+                    child: Column(
                       children: [
                         Container(
-                          child: Column(
-                            children: [Text("tes"), Text("tes")],
+                          child: Text(
+                            "Hasil",
+                            style: TextStyle(fontSize: 30),
                           ),
                         ),
                         Container(
-                          child: Column(
-                            children: [Text("tes"), Text("tes")],
-                          ),
-                        ),
-                      ]),
-                ),
+                            child: Text(
+                          "0.8",
+                          style: TextStyle(fontSize: 25),
+                        ))
+                      ],
+                    )),
                 Container(
-                  child: Text("tes"),
+                  margin: EdgeInsets.fromLTRB(6, 30, 6, 10),
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.all(Radius.circular(3))),
+                  child: TextButton(
+                    child: Text(
+                      "Konversi Suhu",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    onPressed: () {},
+                  ),
                 )
               ],
             ),
