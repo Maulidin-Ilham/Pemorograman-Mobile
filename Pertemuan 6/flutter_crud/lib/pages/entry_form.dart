@@ -23,13 +23,19 @@ class _EntryFormState extends State<EntryForm> {
   Widget build(BuildContext context) {
     if (item != null) {
       nameController.text = item.name;
-      priceController.text = item.price;
+      priceController.text = item.price.toString();
     }
 
     return Scaffold(
       appBar: AppBar(
-        title: item == null ? const Text("Tambah") : const Text("Ubah"),
-        leading: const Icon(Icons.keyboard_arrow_left),
+        title: Text(item == null ? "Tambah" : "Ubah"),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_left),
+        ),
+        backgroundColor: Colors.black,
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 15.0, left: 10.0, right: 10.0),
@@ -85,9 +91,16 @@ class _EntryFormState extends State<EntryForm> {
                               }
                               Navigator.pop(context, item);
                             },
-                            child: const Text(
-                              "Save",
-                              textScaleFactor: 1.5,
+                            child: Container(
+                              color: Colors.black,
+                              width: double.infinity,
+                              padding: EdgeInsets.all(5),
+                              alignment: Alignment.center,
+                              child: Text(
+                                "Simpan",
+                                textScaleFactor: 1.5,
+                                style: TextStyle(color: Colors.white),
+                              ),
                             ))),
 
                     // tombol batal
@@ -96,9 +109,16 @@ class _EntryFormState extends State<EntryForm> {
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: Text(
-                              "Cancel",
-                              textScaleFactor: 1.5,
+                            child: Container(
+                              color: Colors.black,
+                              width: double.infinity,
+                              padding: EdgeInsets.all(5),
+                              alignment: Alignment.center,
+                              child: Text(
+                                "Batal",
+                                textScaleFactor: 1.5,
+                                style: TextStyle(color: Colors.white),
+                              ),
                             )))
                   ],
                 )),

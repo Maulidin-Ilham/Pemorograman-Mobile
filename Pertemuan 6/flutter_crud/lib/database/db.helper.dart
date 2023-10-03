@@ -23,7 +23,7 @@ class DbHelper {
 
   void _createDb(Database db, int version) async {
     await db.execute(
-        "'CREATE TABLE item (id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT, price INTEGER)'");
+        'CREATE TABLE item (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, price INTEGER)');
   }
 
   Future<List<Map<String, dynamic>>> select() async {
