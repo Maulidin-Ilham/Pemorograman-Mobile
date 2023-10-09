@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/service/http_service.dart';
 
-class MovieList extends StatefulWidget {
-  const MovieList({Key? key}) : super(key: key);
+class TvList extends StatefulWidget {
+  const TvList({Key? key}) : super(key: key);
 
   @override
-  State<MovieList> createState() => _MovieListState();
+  State<TvList> createState() => _TvListState();
 }
 
-class _MovieListState extends State<MovieList> {
-  int? moviesCount;
-  List? movies;
+class _TvListState extends State<TvList> {
+  int? tvsCount;
+  List? tvs;
   HttpService? service;
 
   Future intialize() async {
-    movies = [];
-    movies = (await service?.getPopularMovies());
+    tvs = [];
+    tvs = (await service?.getPopularTV());
     setState(() {
-      moviesCount = movies?.length;
-      movies = movies;
+      tvsCount = tvs?.length;
+      tvs = tvs;
     });
   }
 
@@ -34,20 +34,21 @@ class _MovieListState extends State<MovieList> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("Popular Movies"),
+        title: Text("Popular TV Series"),
       ),
       body: ListView.builder(
-          itemCount: (this.moviesCount == null) ? 0 : this.moviesCount,
+          itemCount: (this.tvsCount == null) ? 0 : this.tvsCount,
           itemBuilder: (context, int position) {
             return Card(
               color: Colors.white,
               elevation: 2.0,
               child: ListTile(
-                title: Text(movies?[position].title),
+                title: Text(tvs?[position].name),
                 subtitle: Text(
-                    "Rating = " + movies![position].vote_average.toString()),
+                  "Rating = " + tvs![position].vote_average.toString(),
+                ),
                 leading: Image.network("https://image.tmdb.org/t/p/w500" +
-                    movies?[position].poster_path),
+                    tvs?[position].poster_path),
               ),
             );
           }),

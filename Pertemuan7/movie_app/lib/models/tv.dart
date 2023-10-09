@@ -1,16 +1,15 @@
-class Movie {
+class TV {
   int? id;
-  String? title;
+  String? name;
   double? vote_average;
   String? overview;
   String? poster_path;
 
-  Movie(
-      this.id, this.title, this.vote_average, this.overview, this.poster_path);
+  TV(this.id, this.name, this.vote_average, this.overview, this.poster_path);
 
-  Movie.fromJson(Map<String, dynamic> parsedJson) {
+  TV.fromJson(Map<String, dynamic> parsedJson) {
     this.id = parsedJson['id'];
-    this.title = parsedJson['title'];
+    this.name = parsedJson['name'];
     this.vote_average = (parsedJson['vote_average'].toDouble());
     this.overview = parsedJson['overview'];
     this.poster_path = parsedJson['poster_path'];

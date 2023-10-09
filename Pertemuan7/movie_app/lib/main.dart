@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/pages/home_page.dart';
+import 'package:movie_app/pages/movie_list.dart';
+import 'package:movie_app/pages/tv_list.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +16,11 @@ class MyApp extends StatelessWidget {
       title: "HomePage",
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
-      routes: {"/": (context) => HomePage()},
+      routes: {
+        "/": (context) => HomePage(),
+        "/movies": (context) => MovieList(),
+        "/tvs": (context) => TvList()
+      },
     );
   }
 }
