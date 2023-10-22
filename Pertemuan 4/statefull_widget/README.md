@@ -1,16 +1,3 @@
-# statefull_widget
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![hasil screenshot gambar 1](assets/images/hasil1.jpeg)
+![hasil screenshot gambar 2 - saat belum input namun sudah konversi](assets/images/hasil2.jpeg)
+![hasil screenshot gambar 3 - hasil konversi](assets/images/hasil3.jpeg)

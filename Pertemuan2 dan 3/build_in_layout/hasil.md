@@ -1,8 +1,10 @@
-![Alt text](images/button.jpeg)
-![Alt text](images/alignment.jpeg)
-![Alt text](images/color.jpeg)
-![Alt text](images/heightweight.jpeg)
-![Alt text](images/margin.jpeg)
-![Alt text](images/padding.jpeg)
-![Alt text](images/transform-g.jpeg)
-![Alt text](images/transform-h.jpeg)
+# Hasil Screenshot Program
+
+![Hasil ss button](images/button.jpeg)
+![Hasil ss alignment](images/alignment.jpeg)
+![Hasil ss color](images/color.jpeg)
+![Hasil ss heigh width](images/heightweight.jpeg)
+![Hasil ss margin](images/margin.jpeg)
+![Hasil ss padding](images/padding.jpeg)
+![Hasil ss transform g](images/transform-g.jpeg)
+![Hasil ss transform h](images/transform-h.jpeg)

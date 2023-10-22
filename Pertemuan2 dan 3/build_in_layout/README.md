@@ -1,16 +1,10 @@
-# build_in_layout
+# Hasil Screenshot Program
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Hasil ss button](images/button.jpeg)
+![Hasil ss alignment](images/alignment.jpeg)
+![Hasil ss color](images/color.jpeg)
+![Hasil ss heigh width](images/heightweight.jpeg)
+![Hasil ss margin](images/margin.jpeg)
+![Hasil ss padding](images/padding.jpeg)
+![Hasil ss transform g](images/transform-g.jpeg)
+![Hasil ss transform h](images/transform-h.jpeg)
